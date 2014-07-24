@@ -14,4 +14,7 @@ describe('luck_check') do
   it('takes a five digit number as a string and returns whether it is lucky') do
     luck_check("24833").should(eq(true))
   end
+  it('returns false for an invalid number') do
+    luck_check("53f081").should(eq(false))
+  end
 end
